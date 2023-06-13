@@ -23,12 +23,12 @@ form.addEventListener('submit', (e) => {
         if (request.readyState === XMLHttpRequest.DONE) {
             let code = request.status
             if (code === 201) {
-                console.log(`Файл успешно загружен. Код ответа - ${code}`);
+                console.log(`Файл успешно загружен. Код ответа - ${code}`)
             } else {
-                console.error(`Ошибка при загрузке файла. Код ответа - ${code}`);
+                console.error(`Ошибка при загрузке файла. Код ответа - ${code}`)
             }
         }
-    };
+    }
 
     request.send(formData)
 })
